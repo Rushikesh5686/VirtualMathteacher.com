@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(27,33,39),rgb(27, 33, 39));
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+h1{
+    font-size: 5vw;
+    background: linear-gradient(to right,white,rgb(95,203,218),rgb(220, 9, 171));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+
+}
+.uploadimg{
+    max-width: 600px;
+    width: 90%;
+    height: 300px;
+    background-color: rgb(66, 76, 86);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    border-radius: 50px;
+    box-shadow: 2px,2px,10px,black;
+
+
+}
+.innerupload{
+    width: 100%;
+    height: 80%;
+    background-color: rgb(30, 38, 46);
+    
+    border-radius: 50px;
+    box-shadow: 2px,2px,10px,black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: aliceblue;
+    font-size: 20px;
+    transition: all 0.3s;
+
+
+}
+.innerupload:hover{
+    background-color: blue;
+    box-shadow: inset 2px 2px 10px black;
+    background-color: rgb(42, 51, 62);
+    cursor: pointer;
+}
+button{
+    background-color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.uploadimg img{
+    width: 70px;
+    height: 70px;
+}
+button:hover{
+    background: rgb(5, 208, 49);
+}
+#image{
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 50px;
+}
+.output{
+   width: 90%;
+   max-width: 700px;
+   
+   background-color: rgb(0, 10, 19);
+   color: white;
+   border-radius: 20px;
+   box-shadow: 2px 2px 10px black;
+   display: none;
+   padding: 20px;
+   font-size: 20px;
+   overflow: auto;    
+   margin-bottom: 50px;
+}
+#loading{
+    margin-top: 30px;
+    filter: drop-shadow(2px 2px 10px black);
+    height: 100px;
+    display: none;
+}
